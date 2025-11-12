@@ -4,7 +4,7 @@ const Hero = () => {
   // Change this to your background image URL or path
   // For local images: place image in public folder and use: '/your-image.jpg'
   // For external URLs: use the full URL
-  const backgroundImage = "url('/Picture/csc.jpg')"
+  const backgroundImage = "url('/Picture/csc-background.jpg')"
   
   return (
     <section

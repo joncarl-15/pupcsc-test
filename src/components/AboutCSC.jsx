@@ -13,7 +13,7 @@ const AboutCSC = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="glass rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-4">
+            <h3 className="text-2xl font-semibold text-orange-600 mb-4">
               Who We Are
             </h3>
             <p className="text-gray-700 leading-relaxed mb-4">

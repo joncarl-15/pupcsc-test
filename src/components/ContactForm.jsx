@@ -166,151 +166,15 @@ const ContactForm = () => {
             </div>
 
             <div className="glass rounded-2xl p-6 shadow-lg bg-gradient-to-r from-blue-600 to-purple-600">
-              <h4 className="text-xl font-semibold text-white mb-2">
+              <h4 className="text-xl font-semibold text-grey mb-2">
                 Office Hours
               </h4>
-              <p className="text-white/90">
+              <p className="text-grey/90">
                 Monday - Friday: 8:00 AM - 5:00 PM<br />
                 Saturday: 8:00 AM - 12:00 PM<br />
                 Sunday: Closed
               </p>
             </div>
-          </div>
-
-          {/* Contact Form */}
-          <div className="glass rounded-2xl p-8 shadow-xl">
-            <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-              Send us a Message
-            </h3>
-
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                  Name *
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.name ? 'border-red-500' : 'border-gray-300'
-                  } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
-                  placeholder="Your full name"
-                />
-                {errors.name && (
-                  <p className="mt-1 text-sm text-red-600">{errors.name}</p>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                  Email *
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.email ? 'border-red-500' : 'border-gray-300'
-                  } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
-                  placeholder="your.email@example.com"
-                />
-                {errors.email && (
-                  <p className="mt-1 text-sm text-red-600">{errors.email}</p>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                  Phone Number *
-                </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.phone ? 'border-red-500' : 'border-gray-300'
-                  } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
-                  placeholder="+63 9XX XXX XXXX"
-                />
-                {errors.phone && (
-                  <p className="mt-1 text-sm text-red-600">{errors.phone}</p>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                  Subject *
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.subject ? 'border-red-500' : 'border-gray-300'
-                  } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent`}
-                  placeholder="What is this about?"
-                />
-                {errors.subject && (
-                  <p className="mt-1 text-sm text-red-600">{errors.subject}</p>
-                )}
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                  Message *
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  rows="5"
-                  className={`w-full px-4 py-3 rounded-lg border ${
-                    errors.message ? 'border-red-500' : 'border-gray-300'
-                  } focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none`}
-                  placeholder="Tell us what's on your mind..."
-                />
-                {errors.message && (
-                  <p className="mt-1 text-sm text-red-600">{errors.message}</p>
-                )}
-              </div>
-
-              {submitStatus === 'success' && (
-                <div className="p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                  Thank you for your message! We'll get back to you soon.
-                </div>
-              )}
-
-              {submitStatus === 'error' && (
-                <div className="p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-                  Something went wrong. Please try again later.
-                </div>
-              )}
-
-              <button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-6 rounded-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
-              >
-                {isSubmitting ? (
-                  <>Sending...</>
-                ) : (
-                  <>
-                    Send Message
-                    <FaPaperPlane className="ml-2" />
-                  </>
-                )}
-              </button>
-            </form>
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ const MeetOfficers = () => {
   const officers = [
     {
       id: 1,
-      name: 'Test',
+      name: 'Ms. Franz Bondeci',
       position: 'President',
       image: '/Picture/csc-logo.png',
       social: {
@@ -17,57 +17,29 @@ const MeetOfficers = () => {
     },
     {
       id: 2,
-      name: 'Test',
+      name: 'Mr. Mark Aron Barretto Reyes',
       position: 'Vice President',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop',
+      image: '/Picture/csc-logo.png',
       social: {
         facebook: '#',
-        twitter: '#',
-        instagram: '#'
       }
     },
     {
       id: 3,
       name: 'Test',
       position: 'Secretary',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop',
+      image: '/Picture/csc-logo.png',
       social: {
         facebook: '#',
-        twitter: '#',
-        instagram: '#'
       }
     },
     {
       id: 4,
-      name: 'Ana Rodriguez',
+      name: 'Test',
       position: 'Treasurer',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop',
+      image: '/Picture/csc-logo.png',
       social: {
         facebook: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    },
-    {
-      id: 5,
-      name: 'Carlos Mendoza',
-      position: 'Auditor',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
-      social: {
-        facebook: '#',
-        twitter: '#',
-        instagram: '#'
-      }
-    },
-    {
-      id: 6,
-      name: 'Lisa Fernandez',
-      position: 'Public Relations Officer',
-      image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop',
-      social: {
-        facebook: '#',
-        twitter: '#',
-        instagram: '#'
       }
     },
   ]

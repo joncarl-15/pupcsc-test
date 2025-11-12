@@ -31,8 +31,7 @@ const Navbar = () => {
     { name: 'Officers', href: '#officers' },
     { name: 'University', href: '#university' },
     { name: 'Mission & Vision', href: '#mission-vision' },
-    { name: 'CSOA', href: '#csoa' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'COSOA', href: '#csoa' },
   ]
 
   return (

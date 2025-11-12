@@ -9,14 +9,14 @@ const MissionVision = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Mission & Vision
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-600 to-red-600 mx-auto rounded"></div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Mission */}
           <div className="glass rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-2">
             <div className="flex items-center mb-6">
-              <div className="bg-blue-600 rounded-full p-4 mr-4">
+              <div className="bg-orange-600 rounded-full p-4 mr-4">
                 <FaBullseye className="text-white text-2xl" />
               </div>
               <h3 className="text-3xl font-bold text-gray-800">Mission</h3>
@@ -28,27 +28,27 @@ const MissionVision = () => {
             <ul className="mt-6 space-y-3 text-gray-700">
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Advocate for student rights, welfare, and academic excellence</span>
+                <span>-</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Foster a culture of leadership, service, and active citizenship</span>
+                <span>-</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Promote unity, diversity, and inclusivity within the student community</span>
+                <span>-</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Facilitate meaningful dialogue between students and administration</span>
+                <span>-</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Organize programs and initiatives that enhance student life and development</span>
+                <span>-</span>
               </li>
               <li className="flex items-start">
                 <span className="text-blue-600 mr-3 mt-1">•</span>
-                <span>Uphold the values and principles of the Polytechnic University of the Philippines</span>
+                <span>-</span>
               </li>
             </ul>
           </div>
@@ -56,14 +56,13 @@ const MissionVision = () => {
           {/* Vision */}
           <div className="glass rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-2">
             <div className="flex items-center mb-6">
-              <div className="bg-purple-600 rounded-full p-4 mr-4">
+              <div className="bg-orange-600 rounded-full p-4 mr-4">
                 <FaEye className="text-white text-2xl" />
               </div>
               <h3 className="text-3xl font-bold text-gray-800">Vision</h3>
             </div>
             <p className="text-gray-700 leading-relaxed text-lg mb-6">
-              To be a dynamic and responsive student government that empowers every PUPian to achieve
-              their full potential and contribute meaningfully to society.
+              --
             </p>
             <div className="glass-dark rounded-2xl p-6 mt-6">
               <h4 className="text-xl font-semibold text-white mb-4">
@@ -72,24 +71,23 @@ const MissionVision = () => {
               <ul className="space-y-3 text-white/90">
                 <li className="flex items-start">
                   <span className="text-purple-300 mr-3 mt-1">→</span>
-                  <span>A united and engaged student community that actively participates in
-                    governance and decision-making</span>
+                  <span>--</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-300 mr-3 mt-1">→</span>
-                  <span>Student leaders who are committed to service, excellence, and integrity</span>
+                  <span>--</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-300 mr-3 mt-1">→</span>
-                  <span>A vibrant campus life enriched with diverse programs and activities</span>
+                  <span>--</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-300 mr-3 mt-1">→</span>
-                  <span>Strong partnerships between students, faculty, and administration</span>
+                  <span>--</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-purple-300 mr-3 mt-1">→</span>
-                  <span>A legacy of student-centered leadership that inspires future generations</span>
+                  <span>--</span>
                 </li>
               </ul>
             </div>

@@ -8,7 +8,6 @@ import MissionVision from './components/MissionVision'
 import MeetCSOA from './components/MeetCSOA'
 import MeetCSOAOfficers from './components/MeetCSOAOfficers'
 import ProgressSlideshow from './components/ProgressSlideshow'
-import ContactForm from './components/ContactForm'
 import Footer from './components/Footer'
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
       <MeetCSOA />
       <MeetCSOAOfficers />
       <ProgressSlideshow />
-      <ContactForm />
       <Footer />
     </div>
   )

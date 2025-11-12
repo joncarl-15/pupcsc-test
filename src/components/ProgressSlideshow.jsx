@@ -5,39 +5,27 @@ const ProgressSlideshow = () => {
   const progressImages = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=600&fit=crop',
-      title: 'Student Leadership Summit 2024',
-      description: 'Bringing together student leaders from across the university'
+      image: '/Picture/balik-sinta.jpg',
+      title: 'PUP Balik Sinta 2025',
+      description: 'PUP Lopez proudly welcomed everyone back on campus, bitbit ang 𝙩𝙖𝙥𝙖𝙣𝙜, 𝙩𝙞𝙮𝙖𝙜𝙖, 𝙖𝙩 𝙥𝙪𝙨𝙤 for our unforgettable Balik Sinta 2025.'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop',
-      title: 'Community Outreach Program',
-      description: 'Serving communities and making a difference'
+      image: '/Picture/leadership.jpg',
+      title: 'Leadership Training Seminar and Workshop 2025',
+      description: 'Leadership Training Seminar and Workshop 2025, with the theme: "𝘉𝘦 𝘢 𝘎𝘢𝘮𝘦 𝘊𝘩𝘢𝘯𝘨𝘦𝘳: 𝘓𝘦𝘢𝘥 𝘊𝘩𝘢𝘯𝘨𝘦 𝘸𝘪𝘵𝘩 𝘚𝘵𝘳𝘢𝘵𝘦𝘨𝘪𝘤 𝘝𝘪𝘴𝘪𝘰𝘯 𝘢𝘯𝘥 𝘛𝘳𝘢𝘯𝘴𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘷𝘦 𝘈𝘤𝘵𝘪𝘰𝘯".'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=600&fit=crop',
-      title: 'Annual Cultural Festival',
-      description: 'Celebrating diversity and culture on campus'
+      image: '/Picture/walkout.jpg',
+      title: 'PUP Walkout 2025',
+      description: 'Sa bawat 𝙨𝙞𝙜𝙖𝙬, 𝙥𝙡𝙖𝙠𝙖𝙧𝙙, 𝙖𝙩 𝙝𝙖𝙠𝙗𝙖𝙣𝙜 𝙣𝙜 𝙢𝙜𝙖 𝙄𝙨𝙠𝙤𝙡𝙖𝙧 𝙣𝙜 𝘽𝙖𝙮𝙖𝙣—naroon ang diwa ng pagkakaisa at paninindigan! Ang mga larawang ito ay patunay ng ating kolektibong lakas at tapang na humarap sa mga isyung patuloy na bumabagabag sa ating edukasyon at karapatan.'
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop',
-      title: 'Environmental Initiative',
-      description: 'Promoting sustainability and environmental awareness'
-    },
-    {
-      id: 5,
-      image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop',
-      title: 'Sports Tournament',
-      description: 'Fostering teamwork and healthy competition'
-    },
-    {
-      id: 6,
-      image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&h=600&fit=crop',
-      title: 'Academic Excellence Award',
-      description: 'Recognizing outstanding student achievements'
+      image: '/Picture/hiv.jpg',
+      title: 'HIV Awareness Webinar',
+      description: 'A heartfelt thank you to everyone who joined us via 𝙑𝙞𝙖 𝙕𝙤𝙤𝙢 𝙖𝙣𝙙 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 𝙇𝙞𝙫𝙚, and to our insightful resource speaker, 𝗞𝗹𝗮𝘂𝗱𝗲 𝗠. 𝗕𝘂ñ𝗮𝗴, 𝗥𝗡, 𝗠𝗦𝗡, 𝗟𝗣𝗧 for sharing valuable knowledge on Adolescent Reproductive Health and HIV awareness.'
     },
   ]
 
@@ -64,7 +52,7 @@ const ProgressSlideshow = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Progress & Achievements
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-purple-400 mx-auto rounded mb-4"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-orange-400 to-red-400 mx-auto rounded mb-4"></div>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
             Celebrating milestones and accomplishments in serving the student community
           </p>
@@ -98,19 +86,19 @@ const ProgressSlideshow = () => {
         {/* Progress Stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
           <div className="glass-dark rounded-2xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">50+</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Events Organized</div>
           </div>
           <div className="glass-dark rounded-2xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">1000+</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Students Served</div>
           </div>
           <div className="glass-dark rounded-2xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">20+</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Programs Launched</div>
           </div>
           <div className="glass-dark rounded-2xl p-6 text-center">
-            <div className="text-3xl md:text-4xl font-bold text-white mb-2">15+</div>
+            <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Community Projects</div>
           </div>
         </div>
