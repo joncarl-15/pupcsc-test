@@ -27,27 +27,27 @@ const MissionVision = () => {
             </p>
             <ul className="mt-6 space-y-3 text-gray-700">
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
               <li className="flex items-start">
-                <span className="text-blue-600 mr-3 mt-1">•</span>
+                <span className="text-orange-600 mr-3 mt-1">•</span>
                 <span>-</span>
               </li>
             </ul>
