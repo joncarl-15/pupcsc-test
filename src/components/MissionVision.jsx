@@ -70,23 +70,23 @@ const MissionVision = () => {
               </h4>
               <ul className="space-y-3 text-white/90">
                 <li className="flex items-start">
-                  <span className="text-purple-300 mr-3 mt-1">→</span>
+                  <span className="text-orange-300 mr-3 mt-1">→</span>
                   <span>--</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-300 mr-3 mt-1">→</span>
+                  <span className="text-orange-300 mr-3 mt-1">→</span>
                   <span>--</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-300 mr-3 mt-1">→</span>
+                  <span className="text-orange-300 mr-3 mt-1">→</span>
                   <span>--</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-300 mr-3 mt-1">→</span>
+                  <span className="text-orange-300 mr-3 mt-1">→</span>
                   <span>--</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-purple-300 mr-3 mt-1">→</span>
+                  <span className="text-orange-300 mr-3 mt-1">→</span>
                   <span>--</span>
                 </li>
               </ul>
