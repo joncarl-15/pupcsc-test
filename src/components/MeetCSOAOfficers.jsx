@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
+import cosoaImage from '../Picture/cosoa.jpg'
 
 const MeetCSOAOfficers = () => {
   const csoaOfficers = [
@@ -8,7 +9,7 @@ const MeetCSOAOfficers = () => {
       id: 1,
       name: 'Mx. Lorenzo V. Oriate',
       position: 'COSOA Chairperson',
-      image: '/Picture/cosoa.jpg',
+      image: cosoaImage,
       social: {
         facebook: '#',
       }
@@ -17,7 +18,7 @@ const MeetCSOAOfficers = () => {
       id: 2,
       name: 'Ms. Andrea Yeth S. Lusanta',
       position: 'COSOA Vice Chairperson',
-      image: '/Picture/cosoa.jpg',
+      image: cosoaImage,
       social: {
         facebook: '#',
       }
@@ -26,7 +27,7 @@ const MeetCSOAOfficers = () => {
       id: 3,
       name: 'MS. Kaela Maureen M. Miguel ',
       position: 'Director, Publicity and Creative Arts',
-      image: '/Picture/cosoa.jpg',
+      image: cosoaImage,
       social: {
         facebook: '#',
       }

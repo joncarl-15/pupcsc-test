@@ -1,29 +1,33 @@
 import React from 'react'
 import Slider from 'react-slick'
+import balikSintaImage from '../Picture/balik-sinta.jpg'
+import leadershipImage from '../Picture/leadership.jpg'
+import walkoutImage from '../Picture/walkout.jpg'
+import hivImage from '../Picture/hiv.jpg'
 
 const ProgressSlideshow = () => {
   const progressImages = [
     {
       id: 1,
-      image: '/Picture/balik-sinta.jpg',
+      image: balikSintaImage,
       title: 'PUP Balik Sinta 2025',
       description: 'PUP Lopez proudly welcomed everyone back on campus, bitbit ang 𝙩𝙖𝙥𝙖𝙣𝙜, 𝙩𝙞𝙮𝙖𝙜𝙖, 𝙖𝙩 𝙥𝙪𝙨𝙤 for our unforgettable Balik Sinta 2025.'
     },
     {
       id: 2,
-      image: '/Picture/leadership.jpg',
+      image: leadershipImage,
       title: 'Leadership Training Seminar and Workshop 2025',
       description: 'Leadership Training Seminar and Workshop 2025, with the theme: "𝘉𝘦 𝘢 𝘎𝘢𝘮𝘦 𝘊𝘩𝘢𝘯𝘨𝘦𝘳: 𝘓𝘦𝘢𝘥 𝘊𝘩𝘢𝘯𝘨𝘦 𝘸𝘪𝘵𝘩 𝘚𝘵𝘳𝘢𝘵𝘦𝘨𝘪𝘤 𝘝𝘪𝘴𝘪𝘰𝘯 𝘢𝘯𝘥 𝘛𝘳𝘢𝘯𝘴𝘧𝘰𝘳𝘮𝘢𝘵𝘪𝘷𝘦 𝘈𝘤𝘵𝘪𝘰𝘯".'
     },
     {
       id: 3,
-      image: '/Picture/walkout.jpg',
+      image: walkoutImage,
       title: 'PUP Walkout 2025',
       description: 'Sa bawat 𝙨𝙞𝙜𝙖𝙬, 𝙥𝙡𝙖𝙠𝙖𝙧𝙙, 𝙖𝙩 𝙝𝙖𝙠𝙗𝙖𝙣𝙜 𝙣𝙜 𝙢𝙜𝙖 𝙄𝙨𝙠𝙤𝙡𝙖𝙧 𝙣𝙜 𝘽𝙖𝙮𝙖𝙣—naroon ang diwa ng pagkakaisa at paninindigan! Ang mga larawang ito ay patunay ng ating kolektibong lakas at tapang na humarap sa mga isyung patuloy na bumabagabag sa ating edukasyon at karapatan.'
     },
     {
       id: 4,
-      image: '/Picture/hiv.jpg',
+      image: hivImage,
       title: 'HIV Awareness Webinar',
       description: 'A heartfelt thank you to everyone who joined us via 𝙑𝙞𝙖 𝙕𝙤𝙤𝙢 𝙖𝙣𝙙 𝙁𝙖𝙘𝙚𝙗𝙤𝙤𝙠 𝙇𝙞𝙫𝙚, and to our insightful resource speaker, 𝗞𝗹𝗮𝘂𝗱𝗲 𝗠. 𝗕𝘂ñ𝗮𝗴, 𝗥𝗡, 𝗠𝗦𝗡, 𝗟𝗣𝗧 for sharing valuable knowledge on Adolescent Reproductive Health and HIV awareness.'
     },

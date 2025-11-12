@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGraduationCap, FaUsers, FaBook, FaAward } from 'react-icons/fa'
+import pupLqImage from '../Picture/pup-lq.jpg'
 
 const AboutUniversity = () => {
   const stats = [
@@ -45,7 +46,7 @@ const AboutUniversity = () => {
           <div className="relative">
             <div className="glass rounded-2xl p-8 shadow-xl overflow-hidden">
               <img
-                src="/Picture/pup-lq.jpg"
+                src={pupLqImage}
                 alt="PUP Campus"
                 className="w-full h-64 object-cover rounded-lg mb-4"
               />

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
+import cscLogo from '../Picture/csc-logo.png'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -47,7 +48,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <a href="#home" className="block">
               <img 
-                src="/Picture/csc-logo.png" 
+                src={cscLogo} 
                 alt="PUP CSC Logo" 
                 className="w-12 h-12 md:w-16 md:h-16 object-contain"
               />

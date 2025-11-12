@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from 'react-slick'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
+import cscLogo from '../Picture/csc-logo.png'
 
 const MeetOfficers = () => {
   const officers = [
@@ -8,7 +9,7 @@ const MeetOfficers = () => {
       id: 1,
       name: 'Ms. Franz Bondeci',
       position: 'President',
-      image: '/Picture/csc-logo.png',
+      image: cscLogo,
       social: {
         facebook: '#',
         twitter: '#',
@@ -19,7 +20,7 @@ const MeetOfficers = () => {
       id: 2,
       name: 'Mr. Mark Aron Barretto Reyes',
       position: 'Vice President',
-      image: '/Picture/csc-logo.png',
+      image: cscLogo,
       social: {
         facebook: '#',
       }
@@ -28,7 +29,7 @@ const MeetOfficers = () => {
       id: 3,
       name: 'Test',
       position: 'Secretary',
-      image: '/Picture/csc-logo.png',
+      image: cscLogo,
       social: {
         facebook: '#',
       }
@@ -37,7 +38,7 @@ const MeetOfficers = () => {
       id: 4,
       name: 'Test',
       position: 'Treasurer',
-      image: '/Picture/csc-logo.png',
+      image: cscLogo,
       social: {
         facebook: '#',
       }
