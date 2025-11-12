@@ -19,12 +19,10 @@ A modern, responsive React website for the Polytechnic University of the Philipp
 3. **Meet the Officers** - Carousel showcasing CSC officers with photos
 4. **About University** - Information about PUP with statistics
 5. **Mission & Vision** - CSC's mission, vision, and core values
-6. **Meet the CSOA** - Information about the Central Student Organizations Assembly
-7. **Meet the CSOA Officers** - Carousel showcasing CSOA officers with photos
+6. **Meet the COSOA** - Information about the Central Student Organizations Assembly
+7. **Meet the COSOA Officers** - Carousel showcasing CSOA officers with photos
 8. **Progress Slideshow** - Carousel displaying progress pictures and achievements
-9. **Facebook Updates** - Daily updates from Facebook (requires API setup)
-10. **Contact Form** - Contact form with validation
-11. **Footer** - Footer with links and social media
+9. **Footer** - Footer with links and social media
 
 ## Installation
 
@@ -43,7 +41,7 @@ npm run dev
 npm run build
 ```
 
-## Technologies Used
+## Techstack used
 
 - React 18
 - Vite
@@ -51,15 +49,3 @@ npm run build
 - React Slick
 - React Icons
 - Axios
-
-## Customization
-
-- Update officer photos and information in `MeetOfficers.jsx` and `MeetCSOAOfficers.jsx`
-- Modify progress images in `ProgressSlideshow.jsx`
-- Update contact information in `ContactForm.jsx` and `Footer.jsx`
-- Customize colors in `tailwind.config.js`
-
-## License
-
-This project is created for PUP Central Student Council.
-
