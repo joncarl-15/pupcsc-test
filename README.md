@@ -8,8 +8,6 @@ A modern, responsive React website for the Polytechnic University of the Philipp
 - 📱 Fully responsive design
 - 🎠 React Slick carousels for officers and progress slideshows
 - 📝 Contact form with input validation
-- 📱 Facebook integration for daily updates
-- 🎨 Beautiful gradient backgrounds and animations
 - ♿ Accessible and user-friendly interface
 
 ## Sections
