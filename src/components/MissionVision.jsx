@@ -1,11 +1,20 @@
 import React from 'react'
 import { FaBullseye, FaEye } from 'react-icons/fa'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const MissionVision = () => {
+  const [titleRef, titleVisible] = useScrollAnimation()
+  const [missionRef, missionVisible] = useScrollAnimation()
+  const [visionRef, visionVisible] = useScrollAnimation()
+  const [valuesRef, valuesVisible] = useScrollAnimation()
+
   return (
     <section id="mission-vision" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Mission & Vision
           </h2>
@@ -14,7 +23,10 @@ const MissionVision = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Mission */}
-          <div className="glass rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-2">
+          <div 
+            ref={missionRef}
+            className={`glass rounded-3xl p-8 md:p-10 shadow-2xl hover-lift scroll-fade-in-left ${missionVisible ? 'animate-in' : ''}`}
+          >
             <div className="flex items-center mb-6">
               <div className="bg-orange-600 rounded-full p-4 mr-4">
                 <FaBullseye className="text-white text-2xl" />
@@ -54,7 +66,10 @@ const MissionVision = () => {
           </div>
 
           {/* Vision */}
-          <div className="glass rounded-3xl p-8 md:p-10 shadow-2xl hover:shadow-3xl transition-all transform hover:-translate-y-2">
+          <div 
+            ref={visionRef}
+            className={`glass rounded-3xl p-8 md:p-10 shadow-2xl hover-lift scroll-fade-in-right ${visionVisible ? 'animate-in' : ''}`}
+          >
             <div className="flex items-center mb-6">
               <div className="bg-orange-600 rounded-full p-4 mr-4">
                 <FaEye className="text-white text-2xl" />
@@ -95,27 +110,30 @@ const MissionVision = () => {
         </div>
 
         {/* Core Values */}
-        <div className="mt-16">
+        <div 
+          ref={valuesRef}
+          className={`mt-16 scroll-scale-in ${valuesVisible ? 'animate-in' : ''}`}
+        >
           <div className="glass rounded-3xl p-8 md:p-10 shadow-xl">
             <h3 className="text-3xl font-bold text-gray-800 text-center mb-8">
               Core Values
             </h3>
             <div className="grid md:grid-cols-3 gap-6">
-              <div className="text-center">
+              <div className="text-center hover-lift stagger-1">
                 <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🤝</span>
                 </div>
                 <h4 className="text-xl font-semibold text-gray-800 mb-2">Integrity</h4>
                 <p className="text-gray-600">Honesty and ethical conduct in all endeavors</p>
               </div>
-              <div className="text-center">
+              <div className="text-center hover-lift stagger-2">
                 <div className="bg-purple-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">🌟</span>
                 </div>
                 <h4 className="text-xl font-semibold text-gray-800 mb-2">Excellence</h4>
                 <p className="text-gray-600">Striving for the highest standards in service</p>
               </div>
-              <div className="text-center">
+              <div className="text-center hover-lift stagger-3">
                 <div className="bg-blue-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
                   <span className="text-3xl">❤️</span>
                 </div>

@@ -2,8 +2,10 @@ import React from 'react'
 import Slider from 'react-slick'
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'
 import cosoaImage from '../Picture/cosoa.jpg'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const MeetCSOAOfficers = () => {
+  const [sectionRef, sectionVisible] = useScrollAnimation()
   const csoaOfficers = [
     {
       id: 1,
@@ -64,7 +66,10 @@ const MeetCSOAOfficers = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-white-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div 
+          ref={sectionRef}
+          className={`text-center mb-16 scroll-fade-in ${sectionVisible ? 'animate-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Meet the COSOA Officers
           </h2>
@@ -77,7 +82,7 @@ const MeetCSOAOfficers = () => {
         <Slider {...settings} className="csoa-officer-slider">
           {csoaOfficers.map((officer) => (
             <div key={officer.id} className="px-4">
-              <div className="glass rounded-2xl p-6 shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="glass rounded-2xl p-6 shadow-xl hover-lift hover-glow smooth-transition">
                 <div className="relative mb-4">
                   <img
                     src={officer.image}
@@ -98,7 +103,7 @@ const MeetCSOAOfficers = () => {
                 <div className="flex justify-center space-x-4">
                   <a
                     href={officer.social.facebook}
-                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                    className="text-blue-600 hover:text-blue-800 transition-all duration-300 transform hover:scale-125 hover:rotate-12"
                     aria-label="Facebook"
                   >
                     <FaFacebook size={20} />

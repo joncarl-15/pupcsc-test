@@ -4,8 +4,12 @@ import balikSintaImage from '../Picture/balik-sinta.jpg'
 import leadershipImage from '../Picture/leadership.jpg'
 import walkoutImage from '../Picture/walkout.jpg'
 import hivImage from '../Picture/hiv.jpg'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const ProgressSlideshow = () => {
+  const [titleRef, titleVisible] = useScrollAnimation()
+  const [sliderRef, sliderVisible] = useScrollAnimation()
+  const [statsRef, statsVisible] = useScrollAnimation()
   const progressImages = [
     {
       id: 1,
@@ -48,7 +52,10 @@ const ProgressSlideshow = () => {
       <div className="absolute inset-0 backdrop-blur-3xl opacity-50"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Our Progress & Achievements
           </h2>
@@ -58,7 +65,10 @@ const ProgressSlideshow = () => {
           </p>
         </div>
 
-        <div className="glass-dark rounded-3xl p-4 md:p-8 shadow-2xl">
+        <div 
+          ref={sliderRef}
+          className={`glass-dark rounded-3xl p-4 md:p-8 shadow-2xl scroll-scale-in ${sliderVisible ? 'animate-in' : ''}`}
+        >
           <Slider {...settings}>
             {progressImages.map((item) => (
               <div key={item.id} className="outline-none">
@@ -84,20 +94,23 @@ const ProgressSlideshow = () => {
         </div>
 
         {/* Progress Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-          <div className="glass-dark rounded-2xl p-6 text-center">
+        <div 
+          ref={statsRef}
+          className={`grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 scroll-fade-in ${statsVisible ? 'animate-in' : ''}`}
+        >
+          <div className="glass-dark rounded-2xl p-6 text-center hover-lift stagger-1">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Events Organized</div>
           </div>
-          <div className="glass-dark rounded-2xl p-6 text-center">
+          <div className="glass-dark rounded-2xl p-6 text-center hover-lift stagger-2">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Students Served</div>
           </div>
-          <div className="glass-dark rounded-2xl p-6 text-center">
+          <div className="glass-dark rounded-2xl p-6 text-center hover-lift stagger-3">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Programs Launched</div>
           </div>
-          <div className="glass-dark rounded-2xl p-6 text-center">
+          <div className="glass-dark rounded-2xl p-6 text-center hover-lift stagger-4">
             <div className="text-3xl md:text-4xl font-bold text-white mb-2">--</div>
             <div className="text-gray-300">Community Projects</div>
           </div>

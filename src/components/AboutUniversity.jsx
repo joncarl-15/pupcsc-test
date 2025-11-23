@@ -1,8 +1,14 @@
 import React from 'react'
 import { FaGraduationCap, FaUsers, FaBook, FaAward } from 'react-icons/fa'
 import pupLqImage from '../Picture/pup-lq.jpg'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const AboutUniversity = () => {
+  const [titleRef, titleVisible] = useScrollAnimation()
+  const [leftRef, leftVisible] = useScrollAnimation()
+  const [rightRef, rightVisible] = useScrollAnimation()
+  const [statsRef, statsVisible] = useScrollAnimation()
+  const [featuresRef, featuresVisible] = useScrollAnimation()
   const stats = [
     { icon: FaGraduationCap, number: '--', label: 'Students' },
     { icon: FaUsers, number: '--', label: 'Faculty Members' },
@@ -13,7 +19,10 @@ const AboutUniversity = () => {
   return (
     <section id="university" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             About PUP Lopez Campus
           </h2>
@@ -21,7 +30,10 @@ const AboutUniversity = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="glass rounded-2xl p-8 shadow-xl">
+          <div 
+            ref={leftRef}
+            className={`glass rounded-2xl p-8 shadow-xl hover-lift scroll-fade-in-left ${leftVisible ? 'animate-in' : ''}`}
+          >
             <h3 className="text-2xl font-semibold text-gray-800 mb-4">
               Polytechnic University of the Philippines Lopez Campus
             </h3>
@@ -43,8 +55,11 @@ const AboutUniversity = () => {
             </p>
           </div>
 
-          <div className="relative">
-            <div className="glass rounded-2xl p-8 shadow-xl overflow-hidden">
+          <div 
+            ref={rightRef}
+            className={`relative scroll-fade-in-right ${rightVisible ? 'animate-in' : ''}`}
+          >
+            <div className="glass rounded-2xl p-8 shadow-xl overflow-hidden hover-lift">
               <img
                 src={pupLqImage}
                 alt="PUP Campus"
@@ -64,11 +79,14 @@ const AboutUniversity = () => {
         </div>
 
         {/* Statistics */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div 
+          ref={statsRef}
+          className={`grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in ${statsVisible ? 'animate-in' : ''}`}
+        >
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="glass rounded-2xl p-6 text-center shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+              className={`glass rounded-2xl p-6 text-center shadow-lg hover-lift stagger-${index + 1}`}
             >
               <stat.icon className="text-4xl text-orange-600 mx-auto mb-4" />
               <div className="text-3xl font-bold text-gray-800 mb-2">
@@ -80,8 +98,11 @@ const AboutUniversity = () => {
         </div>
 
         {/* Key Features */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <div className="glass rounded-2xl p-6 shadow-lg">
+        <div 
+          ref={featuresRef}
+          className={`mt-16 grid md:grid-cols-3 gap-6 scroll-fade-in ${featuresVisible ? 'animate-in' : ''}`}
+        >
+          <div className="glass rounded-2xl p-6 shadow-lg hover-lift stagger-1">
             <h4 className="text-xl font-semibold text-orange-600 mb-3">
               Quality Education
             </h4>
@@ -90,7 +111,7 @@ const AboutUniversity = () => {
               for successful careers.
             </p>
           </div>
-          <div className="glass rounded-2xl p-6 shadow-lg">
+          <div className="glass rounded-2xl p-6 shadow-lg hover-lift stagger-2">
             <h4 className="text-xl font-semibold text-orange-600 mb-3">
               Research Excellence
             </h4>
@@ -99,7 +120,7 @@ const AboutUniversity = () => {
               societal challenges.
             </p>
           </div>
-          <div className="glass rounded-2xl p-6 shadow-lg">
+          <div className="glass rounded-2xl p-6 shadow-lg hover-lift stagger-3">
             <h4 className="text-xl font-semibold text-orange-600 mb-3">
               Community Service
             </h4>

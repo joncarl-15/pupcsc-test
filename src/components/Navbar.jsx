@@ -5,8 +5,12 @@ import cscLogo from '../Picture/csc-logo.png'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [pageLoaded, setPageLoaded] = useState(false)
 
   useEffect(() => {
+    // Trigger blur animation on page load
+    setPageLoaded(true)
+    
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
     }
@@ -37,16 +41,18 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
         scrolled
-          ? 'glass-dark shadow-lg'
+          ? 'glass-dark shadow-lg backdrop-blur-md'
+          : pageLoaded
+          ? 'glass-dark navbar-blur-in'
           : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
-            <a href="#home" className="block">
+            <a href="#home" className="block transform transition-transform duration-300 hover:scale-110">
               <img 
                 src={cscLogo} 
                 alt="PUP CSC Logo" 
@@ -62,9 +68,10 @@ const Navbar = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-orange-600 hover:bg-white/20 transition-colors"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-white hover:text-orange-600 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 relative group"
                 >
                   {item.name}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-600 transition-all duration-300 group-hover:w-full"></span>
                 </a>
               ))}
             </div>
@@ -88,14 +95,15 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden glass-dark">
+        <div className="md:hidden glass-dark animate-fade-in-down">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {navItems.map((item) => (
+            {navItems.map((item, index) => (
               <a
                 key={item.name}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/20"
+                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-white/20 transition-all duration-300 transform hover:translate-x-2"
+                style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {item.name}
               </a>

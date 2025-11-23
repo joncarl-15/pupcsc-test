@@ -1,10 +1,18 @@
 import React from 'react'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const MeetCSOA = () => {
+  const [titleRef, titleVisible] = useScrollAnimation()
+  const [leftRef, leftVisible] = useScrollAnimation()
+  const [rightRef, rightVisible] = useScrollAnimation()
+
   return (
     <section id="csoa" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div 
+          ref={titleRef}
+          className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Meet the COSOA
           </h2>
@@ -15,7 +23,10 @@ const MeetCSOA = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="glass rounded-2xl p-8 shadow-xl">
+          <div 
+            ref={leftRef}
+            className={`glass rounded-2xl p-8 shadow-xl hover-lift scroll-fade-in-left ${leftVisible ? 'animate-in' : ''}`}
+          >
             <h3 className="text-2xl font-semibold text-red-600 mb-4">
               About COSOA
             </h3>
@@ -30,8 +41,11 @@ const MeetCSOA = () => {
             </p>
           </div>
 
-          <div className="space-y-6">
-            <div className="glass rounded-2xl p-6 shadow-lg">
+          <div 
+            ref={rightRef}
+            className={`space-y-6 scroll-fade-in-right ${rightVisible ? 'animate-in' : ''}`}
+          >
+            <div className="glass rounded-2xl p-6 shadow-lg hover-lift stagger-1">
               <h4 className="text-xl font-semibold text-red-600 mb-3">
                 Purpose
               </h4>
@@ -52,14 +66,14 @@ const MeetCSOA = () => {
                   <span className="text-red-600 mr-2">✓</span>
                   <span>--</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transform transition-all duration-300 hover:translate-x-2">
                   <span className="text-red-600 mr-2">✓</span>
                   <span>--</span>
                 </li>
               </ul>
             </div>
 
-            <div className="glass rounded-2xl p-6 shadow-lg">
+            <div className="glass rounded-2xl p-6 shadow-lg hover-lift stagger-2">
               <h4 className="text-xl font-semibold text-red-600 mb-3">
                 Key Functions
               </h4>
@@ -76,7 +90,7 @@ const MeetCSOA = () => {
                   <span className="text-red-600 mr-2">•</span>
                   <span>--</span>
                 </li>
-                <li className="flex items-start">
+                <li className="flex items-start transform transition-all duration-300 hover:translate-x-2">
                   <span className="text-red-600 mr-2">•</span>
                   <span>--</span>
                 </li>

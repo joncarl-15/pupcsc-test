@@ -22,27 +22,27 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#about-csc" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#about-csc" className="text-gray-300 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">
                   About CSC
                 </a>
               </li>
               <li>
-                <a href="#officers" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#officers" className="text-gray-300 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">
                   Officers
                 </a>
               </li>
               <li>
-                <a href="#university" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#university" className="text-gray-300 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">
                   University
                 </a>
               </li>
               <li>
-                <a href="#mission-vision" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#mission-vision" className="text-gray-300 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">
                   Mission & Vision
                 </a>
               </li>
               <li>
-                <a href="#updates" className="text-gray-300 hover:text-white transition-colors">
+                <a href="#updates" className="text-gray-300 hover:text-white transition-all duration-300 transform hover:translate-x-2 inline-block">
                   Updates
                 </a>
               </li>
@@ -68,7 +68,7 @@ const Footer = () => {
                 href="https://www.facebook.com/puplopezCSC"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 p-3 rounded-full hover:bg-blue-700 transition-colors"
+                className="bg-blue-600 p-3 rounded-full hover:bg-blue-700 transition-all duration-300 transform hover:scale-110 hover:rotate-12"
                 aria-label="Facebook"
               >
                 <FaFacebook />
