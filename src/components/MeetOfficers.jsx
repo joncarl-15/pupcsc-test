@@ -203,14 +203,14 @@ const MeetOfficers = () => {
   ]
 
   const settings = {
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows: true,
+    arrows: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -230,7 +230,7 @@ const MeetOfficers = () => {
   }
 
   return (
-    <section id="officers" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white-50">
+    <section id="officers" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white-50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div
           ref={sectionRef}

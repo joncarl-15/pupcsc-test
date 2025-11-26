@@ -10,7 +10,7 @@ const Navbar = () => {
   useEffect(() => {
     // Trigger blur animation on page load
     setPageLoaded(true)
-    
+
     const handleScroll = () => {
       setScrolled(window.scrollY > 50)
     }
@@ -41,21 +41,22 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${
-        scrolled
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ease-in-out ${scrolled
           ? 'glass-dark shadow-lg backdrop-blur-md'
           : pageLoaded
-          ? 'glass-dark navbar-blur-in'
-          : 'bg-transparent'
-      }`}
+            ? 'glass-dark navbar-blur-in'
+            : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           <div className="flex-shrink-0">
             <a href="#home" className="block transform transition-transform duration-300 hover:scale-110">
-              <img 
-                src={cscLogo} 
-                alt="PUP CSC Logo" 
+              <img
+                src={cscLogo}
+                alt="PUP CSC Logo"
+                width="64"
+                height="64"
                 className="w-12 h-12 md:w-16 md:h-16 object-contain"
               />
             </a>

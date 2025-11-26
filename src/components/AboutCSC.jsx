@@ -7,9 +7,9 @@ const AboutCSC = () => {
   const [rightRef, rightVisible] = useScrollAnimation()
 
   return (
-    <section id="about-csc" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="about-csc" className="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div 
+        <div
           ref={titleRef}
           className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
         >
@@ -20,7 +20,7 @@ const AboutCSC = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div 
+          <div
             ref={leftRef}
             className={`glass rounded-2xl p-8 shadow-xl hover-lift scroll-fade-in-left ${leftVisible ? 'animate-in' : ''}`}
           >
@@ -43,7 +43,7 @@ const AboutCSC = () => {
             </p>
           </div>
 
-          <div 
+          <div
             ref={rightRef}
             className={`space-y-6 scroll-fade-in-right ${rightVisible ? 'animate-in' : ''}`}
           >

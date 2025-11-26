@@ -50,9 +50,9 @@ const ProgressSlideshow = () => {
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-900 to-gray-800 relative overflow-hidden">
       {/* Background Blur Effect */}
       <div className="absolute inset-0 backdrop-blur-3xl opacity-50"></div>
-      
+
       <div className="max-w-7xl mx-auto relative z-10">
-        <div 
+        <div
           ref={titleRef}
           className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
         >
@@ -65,7 +65,7 @@ const ProgressSlideshow = () => {
           </p>
         </div>
 
-        <div 
+        <div
           ref={sliderRef}
           className={`glass-dark rounded-3xl p-4 md:p-8 shadow-2xl scroll-scale-in ${sliderVisible ? 'animate-in' : ''}`}
         >
@@ -94,7 +94,7 @@ const ProgressSlideshow = () => {
         </div>
 
         {/* Progress Stats */}
-        <div 
+        <div
           ref={statsRef}
           className={`grid grid-cols-2 md:grid-cols-4 gap-6 mt-12 scroll-fade-in ${statsVisible ? 'animate-in' : ''}`}
         >

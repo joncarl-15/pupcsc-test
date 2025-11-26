@@ -17,9 +17,9 @@ const AboutUniversity = () => {
   ]
 
   return (
-    <section id="university" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="university" className="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div 
+        <div
           ref={titleRef}
           className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
         >
@@ -30,7 +30,7 @@ const AboutUniversity = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div 
+          <div
             ref={leftRef}
             className={`glass rounded-2xl p-8 shadow-xl hover-lift scroll-fade-in-left ${leftVisible ? 'animate-in' : ''}`}
           >
@@ -55,7 +55,7 @@ const AboutUniversity = () => {
             </p>
           </div>
 
-          <div 
+          <div
             ref={rightRef}
             className={`relative scroll-fade-in-right ${rightVisible ? 'animate-in' : ''}`}
           >
@@ -79,7 +79,7 @@ const AboutUniversity = () => {
         </div>
 
         {/* Statistics */}
-        <div 
+        <div
           ref={statsRef}
           className={`grid grid-cols-2 md:grid-cols-4 gap-6 scroll-fade-in ${statsVisible ? 'animate-in' : ''}`}
         >
@@ -98,7 +98,7 @@ const AboutUniversity = () => {
         </div>
 
         {/* Key Features */}
-        <div 
+        <div
           ref={featuresRef}
           className={`mt-16 grid md:grid-cols-3 gap-6 scroll-fade-in ${featuresVisible ? 'animate-in' : ''}`}
         >

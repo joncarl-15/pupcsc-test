@@ -9,9 +9,9 @@ const MissionVision = () => {
   const [valuesRef, valuesVisible] = useScrollAnimation()
 
   return (
-    <section id="mission-vision" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white-50">
+    <section id="mission-vision" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-orange-50 to-white-50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div 
+        <div
           ref={titleRef}
           className={`text-center mb-16 scroll-fade-in ${titleVisible ? 'animate-in' : ''}`}
         >
@@ -23,7 +23,7 @@ const MissionVision = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Mission */}
-          <div 
+          <div
             ref={missionRef}
             className={`glass rounded-3xl p-8 md:p-10 shadow-2xl hover-lift scroll-fade-in-left ${missionVisible ? 'animate-in' : ''}`}
           >
@@ -66,7 +66,7 @@ const MissionVision = () => {
           </div>
 
           {/* Vision */}
-          <div 
+          <div
             ref={visionRef}
             className={`glass rounded-3xl p-8 md:p-10 shadow-2xl hover-lift scroll-fade-in-right ${visionVisible ? 'animate-in' : ''}`}
           >
@@ -110,7 +110,7 @@ const MissionVision = () => {
         </div>
 
         {/* Core Values */}
-        <div 
+        <div
           ref={valuesRef}
           className={`mt-16 scroll-scale-in ${valuesVisible ? 'animate-in' : ''}`}
         >

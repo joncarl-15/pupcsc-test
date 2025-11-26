@@ -66,7 +66,7 @@ const MeetCSOAOfficers = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-red-50 to-white-50">
       <div className="max-w-7xl mx-auto">
-        <div 
+        <div
           ref={sectionRef}
           className={`text-center mb-16 scroll-fade-in ${sectionVisible ? 'animate-in' : ''}`}
         >

@@ -3,14 +3,14 @@ import backgroundImageSrc from '../Picture/csc-background.jpg'
 
 const Hero = () => {
   const backgroundImage = `url('${backgroundImageSrc}')`
-  
+
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden w-full"
     >
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage }}
       >
